@@ -7,6 +7,8 @@ Work in Progress
 - remote process search
 - string search
 - arbitrary byte array search
+- ARM neon intrinsics
+- scalar path
 
 # Performance
 Currently this ships with three code paths.
