@@ -90,7 +90,7 @@ macro_rules! export_part {
 
 macro_rules! export_fwd {
     ($name:ident, $func:ident, $ty:ty, $( $needle:ident),+) => {
-        #[no_mangle]
+        #[unsafe(no_mangle)]
         pub fn $name($($needle: $ty),+, haystack: &[u8]) -> Option<usize> {
             unsafe {
                 if core_detect::is_x86_feature_detected!("avx2") {
