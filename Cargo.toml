@@ -1,5 +1,5 @@
 [workspace]
-members = ["memscan"]
+members = ["memscan", "memscan-gui", "random_memory"]
 resolver = "2"
 
 [workspace.package]

@@ -1,0 +1,7 @@
+[package]
+name = "random_memory"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+rand = "0.9.1"

@@ -1,0 +1,14 @@
+[package]
+name = "memscan-gui"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+eframe = { version = "0.31.1", default-features = false, features = ["wayland", "glow", "persistence"] }
+egui = "0.31.1"
+egui_extras = "0.31.1"
+procfs = "0.17.0"
+serde = { version = "1.0.219", features = ["derive"] }
+memscan = { path = "../memscan" }
+nix = "0.30.1"
+
